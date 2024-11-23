@@ -254,7 +254,7 @@ resource "aws_db_instance_role_association" "rds_s3_role_ass" {
 // create a keypair for warehouse bastion
 resource "aws_key_pair" "warehouse_kp" {
   key_name = "warehouse_kp"
-  public_key = file("warehouse_kp.pub")
+  public_key = file("keys/warehouse_kp.pub")
 }
 
 // create aws linux data object
